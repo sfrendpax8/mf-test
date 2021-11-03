@@ -25,6 +25,11 @@ module.exports = {
       // https: true,
       port,
     },
+    optimization: {
+      splitChunks: {
+        minSize: 10000000, // temp for disabling vendor chunks
+      },
+    },
     // makes sure we only get a single file
     // externals: ["vue"]
   },
