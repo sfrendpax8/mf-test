@@ -34,5 +34,4 @@ module.exports = {
     }),
     new CleanWebpackPlugin(),
   ],
-  // externals: ["vue"],
 };

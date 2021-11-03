@@ -7,12 +7,13 @@ module.exports = {
   //   extract: false,
   // },
   configureWebpack: {
+    // mode: 'production',
     entry: path.resolve(__dirname, "src/main"),
     output: {
       filename: "test.js",
       libraryTarget: "system", // in their cli tool, it looks like they're setting this to 'umd' but that doesn't work for me
       devtoolNamespace: "vueapp",
-      jsonpFunction: 'vueapp', // make sure each code split is loaded with unique name / prevents clashing with other apps
+      jsonpFunction: 'webpackJsonp_vueapp', // make sure each code split is loaded with unique name / prevents clashing with other apps
     },
     devtool: "sourcemap",
     devServer: {
@@ -30,8 +31,7 @@ module.exports = {
         minSize: 1000000000, // temp for disabling vendor chunks. With this gone, something happens to the test.js module where it's not the same format
       },
     },
-    // makes sure we only get a single file
-    // externals: ["vue"]
+    // externals: ["single-spa", "vue"]
   },
   filenameHashing: false,
 };

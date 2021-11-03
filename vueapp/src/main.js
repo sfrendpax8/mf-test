@@ -10,7 +10,9 @@ Vue.config.productionTip = false
 const vueLifecycles = singleSpaVue({
   Vue,
   appOptions: {
-    render: h => h(App),
+    render(h) {
+      return h(App);
+    },
   }
 });
 
