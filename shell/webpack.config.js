@@ -32,7 +32,7 @@ module.exports = {
       inject: false, // initially broke things, but seems to fix error code in console regarding root-config.js being requested
       template: "src/index.ejs",
     }),
-    // new CleanWebpackPlugin(),
+    new CleanWebpackPlugin(),
   ],
   // externals: ["vue"],
 };

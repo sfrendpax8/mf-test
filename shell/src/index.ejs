@@ -9,20 +9,21 @@
   <script type="systemjs-importmap">
     {
       "imports": {
-        "@test/root-config": "http://localhost:8600/root-config.js",
+        "@test/root-config": "http://localhost:8082/root-config.js",
+        "@test/vueapp": "http://localhost:8081/test.js"
       }
     }
   </script>
   <!-- <script src="https://cdn.jsdelivr.net/npm/import-map-overrides/dist/import-map-overrides.js"></script> -->
   <script src="https://cdn.jsdelivr.net/npm/systemjs/dist/system.js"></script>
-  <!-- <script src="https://cdn.jsdelivr.net/npm/systemjs/dist/extras/amd.js"></script> -->
+  <script src="https://cdn.jsdelivr.net/npm/systemjs/dist/extras/amd.js"></script>
 </head>
 <body>
   <script>
     // System.import('http://localhost:8500/app/js');
     System.import('@test/root-config');
   </script>
-  <!-- <div id="single-spa-application:@test/vue"></div> -->
+  <div id="single-spa-application:@test/vueapp"></div>
   <!-- <import-map-overrides-full show-when-local-storage="devtools" dev-libs></import-map-overrides-full> -->
 </body>
 </html>
