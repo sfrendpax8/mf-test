@@ -27,7 +27,7 @@ module.exports = {
     },
     optimization: {
       splitChunks: {
-        minSize: 10000000, // temp for disabling vendor chunks
+        minSize: 1000000000, // temp for disabling vendor chunks. With this gone, something happens to the test.js module where it's not the same format
       },
     },
     // makes sure we only get a single file
