@@ -31,7 +31,7 @@ module.exports = {
         minSize: 1000000000, // temp for disabling vendor chunks. With this gone, something happens to the test.js module where it's not the same format
       },
     },
-    // externals: ["single-spa", "vue"]
+    externals: ["single-spa", "vue"]
   },
   filenameHashing: false,
 };
