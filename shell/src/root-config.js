@@ -6,4 +6,10 @@ registerApplication({
   activeWhen: "/test",
 });
 
+// registerApplication({
+//   name: "@test/vueapp2",
+//   app: () => System.import("@test/vueapp2"),
+//   activeWhen: "/",
+// });
+
 start();

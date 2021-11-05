@@ -10,15 +10,16 @@
     {
       "imports": {
         "@test/root-config": "http://localhost:8082/root-config.js",
-        "@test/vueapp": "http://localhost:8081/test.js",
-        "vue": "https://unpkg.com/vue@2.6.11/dist/vue.min.js"
+        "@test/vueapp": "http://localhost:8081/js/app.js",
+        "vue": "https://unpkg.com/vue@2.6.14/dist/vue.min.js"
       }
     }
   </script>
+        <!-- "@test/vueapp": "http://localhost:8081/test.js", -->
   <!-- <script src="https://cdn.jsdelivr.net/npm/import-map-overrides/dist/import-map-overrides.js"></script> -->
   <script src="https://cdn.jsdelivr.net/npm/systemjs/dist/system.js"></script>
   <!-- The below export do not fix the lifecycles problem out of the box -->
-  <!-- <script src="https://cdn.jsdelivr.net/npm/systemjs/dist/extras/amd.js"></script> -->
+  <script src="https://cdn.jsdelivr.net/npm/systemjs/dist/extras/amd.js"></script>
   <!-- <script src="https://cdn.jsdelivr.net/npm/systemjs/dist/extras/named-exports.js"></script> -->
   <!-- <script src="https://cdn.jsdelivr.net/npm/systemjs/dist/extras/named-register.js"></script> -->
   <!-- <script src="https://cdn.jsdelivr.net/npm/systemjs/dist/extras/use-default.js"></script> -->
