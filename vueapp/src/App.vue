@@ -6,9 +6,14 @@
 </template>
 
 <script>
+import _ from 'lodash';
+import XLSX from 'lodash';
+
 export default {
   name: 'App',
-  components: {
+  mounted() {
+    console.log(_.isEmpty({}));
+    console.log(XLSX);
   }
 }
 </script>
