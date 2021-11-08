@@ -2,6 +2,7 @@
 import Vue from 'vue'
 import singleSpaVue from 'single-spa-vue';
 
+import './assets/global.css';
 
 import App from './App.vue';
 import router from './router';

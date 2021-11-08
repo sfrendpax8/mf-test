@@ -1,0 +1,4 @@
+/* Very important that if the MF has global css, it's wrapped in a parent selector. Global rules will bleed */
+#app {
+  color: blue;
+}
