@@ -6,9 +6,9 @@ module.exports = {
   configureWebpack: {
     output: {
       filename: `js/${projectName}.js`,
-      devtoolNamespace: "vueapp",
+      devtoolNamespace: projectName,
     },
-    externals: ['vue'],
+    externals: ['vue', 'vue-router'],
   },
 
   // In this scope, we put stuff available through Vue Configuration Reference

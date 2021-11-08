@@ -1,19 +1,17 @@
 <template>
   <div id="app">
-    <img alt="Vue logo" src="./assets/logo.png">
-    <p>Hello</p>
+    <p>Home</p>
+    <router-view />
   </div>
 </template>
 
 <script>
-import _ from 'lodash';
-import XLSX from 'lodash';
+import isEmpty from 'lodash/isEmpty';
 
 export default {
   name: 'App',
   mounted() {
-    console.log(_.isEmpty({}));
-    console.log(XLSX);
+    console.log(isEmpty({}));
   }
 }
 </script>
