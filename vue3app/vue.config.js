@@ -1,5 +1,5 @@
-const port = 8081;
-const projectName = 'vueapp'; // can probably retrieve through script or packageJson property
+const port = 8084;
+const projectName = 'vue3app'; // can probably retrieve through script or packageJson property
 
 module.exports = {
   // In this scope, we can alter the raw webpack
@@ -8,7 +8,7 @@ module.exports = {
       filename: `js/${projectName}.js`,
       devtoolNamespace: projectName,
     },
-    externals: ['vue', 'vue-router', /^@test\/.+/],
+    externals: [/^@test\/.+/],
   },
 
   // In this scope, we put stuff available through Vue Configuration Reference

@@ -1,11 +1,11 @@
 <template>
   <div id="app">
-    <p>Home Page</p>
+    <p>Home Page - Vue 3</p>
     <div>
       <router-link to="/vueapp">Home</router-link>
       <router-link to="/vueapp/a">A</router-link>
       <router-link to="/vueapp/b">B</router-link>
-    </div> -->
+    </div>
     <router-view />
   </div>
 </template>

@@ -7,9 +7,9 @@ registerApplication({
 });
 
 registerApplication({
-  name: "@test/shared-components",
-  app: () => System.import("@test/shared-components"),
-  activeWhen: "/shared",
+  name: "@test/vue3app",
+  app: () => System.import("@test/vue3app"),
+  activeWhen: "/vue3app",
 });
 
 start();
