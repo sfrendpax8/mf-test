@@ -5,7 +5,7 @@
       <router-link to="/vueapp">Home</router-link>
       <router-link to="/vueapp/a">A</router-link>
       <router-link to="/vueapp/b">B</router-link>
-    </div> -->
+    </div>
     <router-view />
   </div>
 </template>
@@ -15,10 +15,6 @@ import isEmpty from 'lodash/isEmpty';
 
 export default {
   name: 'App',
-  components: {
-   CustomButton, 
-   RouteA,
-  },
   mounted() {
     console.log(isEmpty({}));
   }
