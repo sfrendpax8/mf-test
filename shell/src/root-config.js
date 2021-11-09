@@ -6,10 +6,10 @@ registerApplication({
   activeWhen: "/vueapp",
 });
 
-// registerApplication({
-//   name: "@test/vueapp2",
-//   app: () => System.import("@test/vueapp2"),
-//   activeWhen: "/",
-// });
+registerApplication({
+  name: "@test/shared-components",
+  app: () => System.import("@test/shared-components"),
+  activeWhen: "/shared",
+});
 
 start();

@@ -3,4 +3,7 @@ shell/node_modules
 vueapp/dist
 vueapp/node_modules
 
+shared-components/dist
+shared-components/node_modules
+
 .DS_Store
