@@ -4,7 +4,8 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "start": "webpack-dev-server --mode=development --port 8082"
+    "start": "webpack-dev-server --mode=development --port 8082",
+    "start:prod": "webpack-dev-server --mode=production --port 8082"
   },
   "author": "",
   "license": "ISC",

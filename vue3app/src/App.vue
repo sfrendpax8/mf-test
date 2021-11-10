@@ -1,6 +1,6 @@
 <template>
   <div id="app">
-    <p>Home Page - Vue 3</p>
+    <p class="text-3xl">Home Page - Vue 3</p>
     <custom-button />
   </div>
 </template>
