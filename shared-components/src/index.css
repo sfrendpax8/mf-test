@@ -1,0 +1,37 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  h1 {
+    font-size: 48px;
+    line-height: 48px;
+    @apply font-sans font-normal;
+  }
+
+  h2 {
+    font-size: 32px;
+    line-height: 20px;
+    @apply font-sans font-normal;
+  }
+
+  h3 {
+    font-size: 25.6px;
+    line-height: 20px;
+    letter-spacing: 0.25px;
+    @apply font-sans font-normal;
+  }
+
+  h4 {
+    font-size: 20px;
+    line-height: 20px;
+    letter-spacing: 0.25px;
+    @apply font-sans font-normal;
+  }
+
+  p {
+    font-size: 16px;
+    line-height: 20px;
+    @apply font-sans font-normal;
+  }
+}

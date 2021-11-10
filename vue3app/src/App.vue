@@ -1,13 +1,13 @@
 <template>
   <div id="app">
-    <p class="text-3xl">Home Page - Vue 3</p>
+    <p class="text-gray-500">Home Page - Vue 3</p>
     <custom-button />
   </div>
 </template>
 
 <script>
 import isEmpty from 'lodash/isEmpty';
-import { CustomButton } from '@test/shared-components';
+import { CustomButton, TailwindConfig } from '@test/shared-components';
 
 export default {
   name: 'App',
@@ -16,6 +16,7 @@ export default {
   },
   mounted() {
     console.log(isEmpty({}));
+    console.log(TailwindConfig);
   }
 }
 </script>

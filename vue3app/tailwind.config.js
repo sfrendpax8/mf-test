@@ -1,13 +1,15 @@
 module.exports = {
   presets: [
-    require('./tw')
+    // Import the root design system from shared-components (all colors and customizations)
+    require('../shared-components/tailwind.config')
   ],
   purge: {
     enabled: true,
     content: ['./src/**/*.{vue,js,ts,jsx,tsx}'],
   },
   corePlugins: {
-    preflight: false, // disable reset styles (they should come from elsewhere so they don't happen multiple times)
+    preflight: false, // disable reset styles (should carry over from propulsion)
+    animation: false, // should carry over from propulsion
   },
   theme: {
     extend: {

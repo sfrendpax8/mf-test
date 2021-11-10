@@ -1,3 +1,10 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+@layer base {
+  p {
+    /* this rule will override what is imported from the shared-components equiv */
+    font-size: 25px;
+  }
+}
