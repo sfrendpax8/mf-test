@@ -18,10 +18,8 @@
       }
     }
   </script>
-        <!-- "@test/vueapp": "http://localhost:8081/test.js", -->
   <!-- <script src="https://cdn.jsdelivr.net/npm/import-map-overrides/dist/import-map-overrides.js"></script> -->
   <script src="https://cdn.jsdelivr.net/npm/systemjs/dist/system.js"></script>
-  <!-- The below export do not fix the lifecycles problem out of the box -->
   <script src="https://cdn.jsdelivr.net/npm/systemjs/dist/extras/amd.js"></script>
   <!-- <script src="https://cdn.jsdelivr.net/npm/systemjs/dist/extras/named-exports.js"></script> -->
   <!-- <script src="https://cdn.jsdelivr.net/npm/systemjs/dist/extras/named-register.js"></script> -->
@@ -30,6 +28,8 @@
 <body>
   <script>
     System.import('@test/root-config');
+    // We load shared component library in shell so that it's only downloaded once
+    System.import('@test/shared-components');
   </script>
   <!-- <import-map-overrides-full show-when-local-storage="devtools" dev-libs></import-map-overrides-full> -->
 </body>

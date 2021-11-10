@@ -5,6 +5,7 @@
       <router-link to="/vueapp">Home</router-link>
       <router-link to="/vueapp/a">A</router-link>
       <router-link to="/vueapp/b">B</router-link>
+      <router-link to="/vue3app">Vue 3 App</router-link>
     </div>
     <router-view />
   </div>
