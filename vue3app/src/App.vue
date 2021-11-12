@@ -6,7 +6,6 @@
 </template>
 
 <script>
-import isEmpty from 'lodash/isEmpty';
 import { CustomButton } from '@test/shared-components';
 
 export default {
@@ -14,8 +13,5 @@ export default {
   components: {
    CustomButton, 
   },
-  mounted() {
-    console.log(isEmpty({}));
-  }
 }
 </script>

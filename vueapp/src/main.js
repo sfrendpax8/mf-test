@@ -13,7 +13,11 @@ const vueLifecycles = singleSpaVue({
   Vue,
   appOptions: {
     render(h) {
-      return h(App);
+      return h(App, {
+        props: {
+          auth: this.auth,
+        },
+      });
     },
     router,
   }

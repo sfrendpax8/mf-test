@@ -16,8 +16,15 @@ import isEmpty from 'lodash/isEmpty';
 
 export default {
   name: 'App',
-  mounted() {
-    console.log(isEmpty({}));
+  props: {
+    auth: {
+      type: Object,
+      required: true,
+    },
+  },
+  async mounted() {
+    console.log(await this.auth.checkIfAuthenticated());
+    return isEmpty({});
   }
 }
 </script>
