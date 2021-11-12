@@ -7,7 +7,7 @@
 
 <script>
 import isEmpty from 'lodash/isEmpty';
-import { CustomButton, TailwindConfig } from '@test/shared-components';
+import { CustomButton } from '@test/shared-components';
 
 export default {
   name: 'App',
@@ -16,7 +16,6 @@ export default {
   },
   mounted() {
     console.log(isEmpty({}));
-    console.log(TailwindConfig);
   }
 }
 </script>

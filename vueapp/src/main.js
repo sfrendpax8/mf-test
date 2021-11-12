@@ -23,6 +23,8 @@ export const bootstrap = vueLifecycles.bootstrap;
 export const mount = vueLifecycles.mount;
 export const unmount = vueLifecycles.unmount;
 
-// new Vue({
-//   render: h => h(App),
-// }).$mount('#app')
+  // if (process.env.NODE_ENV === 'local') {
+  //   new Vue({
+  //     render: h => h(App),
+  //   }).$mount('#app')
+  // }

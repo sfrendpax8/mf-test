@@ -2,6 +2,7 @@ module.exports = {
   presets: [
     // Import the root design system from shared-components (all colors and customizations)
     require('../shared-components/tailwind.config')
+    // require('@pax8/propulsion-config'),
   ],
   purge: {
     enabled: true,

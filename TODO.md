@@ -6,8 +6,8 @@
   - Try consuming a) the config and b) the CSS
 - Vue dev tools
 - Create an auth module
+- Create a parcel
 - Create a global state system
-- Try exporting script setup component from shared lib
 - Figure out a good local development (standalone) system for regular MF
 
 ## Tailwind / Shared CSS
