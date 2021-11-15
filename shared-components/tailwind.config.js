@@ -3,7 +3,7 @@ module.exports = {
     enabled: true,
     content: ['./src/**/*.{vue,js,ts,jsx,tsx}'],
   },
-  darkMode: 'class', // or 'media' or 'class'
+  darkMode: false, // or 'media' or 'class'
   theme: {
     colors: {
       white: '#FFFFFF',
