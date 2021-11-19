@@ -12,4 +12,10 @@ registerApplication({
   activeWhen: "/vue3app",
 });
 
+registerApplication({
+  name: "@test/bat",
+  app: () => System.import("@test/bat"),
+  activeWhen: "/bat",
+});
+
 start();

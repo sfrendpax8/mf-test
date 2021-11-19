@@ -1,12 +1,4 @@
-shell/node_modules
-
-vueapp/dist
-vueapp/node_modules
-
-vue3app/dist
-vue3app/node_modules
-
-shared-components/dist
-shared-components/node_modules
+**/node_modules
+**/dist
 
 .DS_Store
